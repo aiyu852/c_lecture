@@ -1,4 +1,4 @@
-//  共享单车程序
+//  鍏变韩鍗曡溅绋嬪簭
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -14,7 +14,7 @@ int main (void)
 	summ = 0;
 	/*************
 	*
-	*获得数据
+	*鑾峰緱鏁版嵁
 	*
 	**************/
 	printf("Please enter how long you use the mobike!");
@@ -23,7 +23,7 @@ int main (void)
 	for(i ; ;i++)
 	{
 		scanf("%lf:%lf", &hour, &min);
-		if(min < 60)
+		if(min < 60&&hour >= 0)
 			break;
 		else
 			printf("Please enter a suitable number!");
@@ -37,7 +37,7 @@ int main (void)
 
 	/******************
 	*
-	* 对于使用时长进行计算
+	* 瀵逛簬浣跨敤鏃堕暱杩涜璁＄畻
 	*
 	*******************/
 
@@ -54,7 +54,7 @@ int main (void)
 
 	/******************
 	*
-	* 返回信息
+	* 杩斿洖淇℃伅
 	*
 	*******************/
 
