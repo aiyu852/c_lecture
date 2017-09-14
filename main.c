@@ -46,9 +46,10 @@ int main (void)
 	sum = sum + min;
 	sumh = (int) sum / H_PER_M;
 	summ = (int) sum % H_PER_M;
-	if(summ > 30)
+	if(summ >= 30)
 		sumh++;
-
+	if((hour!=0||min!=0)&&sumh==0)
+		sumh=1;
 	money = 0;
 	money = sumh * fee;
 
