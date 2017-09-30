@@ -1,0 +1,11 @@
+#include "stdafx.h"
+int main(int argc, char* argv[])
+{
+  int a,b,c,d; double avg;
+  printf("输入成绩：");
+  scanf("%d %d %d %d",&a, &b, &c, &d);
+  printf("平均成绩：");
+  avg = (a+b+c+d)/4.0; 
+  printf("%.1f",avg);  
+  return 0;
+}
